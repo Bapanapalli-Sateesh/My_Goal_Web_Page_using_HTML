@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sateesh Bapanapalli">
+    <meta name="description" content="This page contains all the things I am learning how to create a web page as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>My goal for the month</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <hr>
+
+    <main>
+        <article id="html">
+            <h2>I am ready to learn HTML!</h2>
+            <p>This is my first web page.</p>
+    
+            <section>
+                <h3>HTML5</h3>
+                <img src="./assets/html_logo.png" alt="HTML5 logo" title="I am learning html5" width="250" height="250">
+    
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p><code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code></p>
+                </figure>
+            </section>
+
+            <section>
+                <h3>My daily Schedule</h3>
+                <p>
+                    Let me tell you how:
+                </p>
+    
+                <!-- 
+                    <br>&nbsp;&nbsp;&nbsp;...I learn more about web dev.
+                    <br>&nbsp;&nbsp;&nbsp;...I plan out my schedule.
+                    <br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.
+                -->
+    
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from 
+                        <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr>.
+                    </li>
+                </ol>
+
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day.</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.</p>
+                    </details>
+                </aside>
+
+            </section>
+            
+        </article>
+    
+        <hr>
+        
+        <article id="vacation">
+            <h2>I Also Planning a Vacation</h2>
+            <p>I have been working hard and <em>really need a gateway.</em></p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+    
+            <h3>Places I'd like to visit</h3>
+
+            <section>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Caribbean.</p>
+                        <img src="./assets/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean beach." width="450" height="250" loading="lazy">
+                    </li>
+                    <li>
+                        <p>I have heard good things about going here:</p>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancun
+                            <br>Bahia petempich Puerto Morelos, Mexico
+                            <br> Colonia Morelos, Mexico 77580
+                        </address>
+                        <img src="./assets/vacation.jpg" alt="Cancun vacation" title="It's 5'o clock somewhere!">
+                    </li>
+                </ul>
+            </section>
+
+    
+            <!-- TODO: add more places -->
+            <section>
+                <h3>Places I want to avoid</h3>
+                <!-- <p>Anywhere cold. <strong>No way!</strong></p> -->
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I here this is <strong>Cold!</strong></dd>
+        
+                    <dt>South Pole</dt>
+                    <dd>This is alos cold.</dd>
+        
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+    
+        <h3>Figure & caption:</h3>
+        <figure>
+            <img src="./assets/elephant-660-480.jpg" alt="Elephant at sunset" />
+            <figcaption>An elephant at sunset</figcaption>
+        </figure>
+    
+        <figure>
+            <figcaption><b>Edsger Dijkstra:</b></figcaption>
+            <blockquote>
+              If debugging is the process of removing software bugs, then programming must
+              be the process of putting them in.
+            </blockquote>
+        </figure>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get" name="form" id="form">
+
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>   <!--autoomplete suggests previously entered data -->    
+                    </div>
+    
+                    <br>
+                    
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>       
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="enter password" required>       
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>       
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="decade">Favourite Decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                    </div>
+    
+                    <br>
+    
+                    <!-- <div>
+                        <label for="coffee">Favourite Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="coffee">
+                            <option value="latte">
+                            <option value="Espresso">
+                            <option value="cortado">
+                            <option value="americano">
+                            <option value="other">
+                        </datalist>
+                    </div>
+                    -->
+                    <div>
+                        <label for="coffee">Favourite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="coffees">
+                                <option value="regular coffee">Regular Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte" selected>Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+    
+                            <option value="other">Others</option>
+                        </select>
+                    </div> 
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                        <label for="otherPet">Other</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Send me a note:</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here."></textarea>
+                </fieldset>
+
+                <br>
+
+                <!-- 
+                    To create buttons, we have 2 ways:
+                    1. using input type 
+                    2. using button tag
+
+                    <input type="reset">
+                    <input type="submit">
+                 -->
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            </form>
+        </article>
+    </main>
+   
+
+    <hr>
+    
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Sateesh Bapanapalli</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+
+</body>
+</html>
